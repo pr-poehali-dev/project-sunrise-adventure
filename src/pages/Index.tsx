@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Index() {
   return (
     <main className="min-h-screen bg-white">
@@ -67,7 +69,7 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Category 1 */}
-            <div className="group">
+            <Link to="/vacancy/1" className="group block">
               <div className="aspect-square bg-white mb-4 overflow-hidden">
                 <div className="w-full h-full flex flex-col items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300 p-6">
                   <span className="text-black text-6xl font-bold group-hover:text-white transition-colors">IT</span>
@@ -76,10 +78,10 @@ export default function Index() {
               </div>
               <h3 className="text-xl font-bold mb-2">Разработка и IT</h3>
               <p className="text-neutral-400">Backend, Frontend, DevOps, аналитика данных, тестирование</p>
-            </div>
+            </Link>
 
             {/* Category 2 */}
-            <div className="group">
+            <Link to="/vacancy/2" className="group block">
               <div className="aspect-square bg-white mb-4 overflow-hidden">
                 <div className="w-full h-full flex flex-col items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300 p-6">
                   <span className="text-black text-6xl font-bold group-hover:text-white transition-colors">MKT</span>
@@ -88,10 +90,10 @@ export default function Index() {
               </div>
               <h3 className="text-xl font-bold mb-2">Маркетинг и продажи</h3>
               <p className="text-neutral-400">Digital-маркетинг, SMM, контент, менеджеры по продажам</p>
-            </div>
+            </Link>
 
             {/* Category 3 */}
-            <div className="group">
+            <Link to="/vacancy/3" className="group block">
               <div className="aspect-square bg-white mb-4 overflow-hidden">
                 <div className="w-full h-full flex flex-col items-center justify-center bg-neutral-100 group-hover:bg-red-600 transition-colors duration-300 p-6">
                   <span className="text-black text-6xl font-bold group-hover:text-white transition-colors">FIN</span>
@@ -100,7 +102,7 @@ export default function Index() {
               </div>
               <h3 className="text-xl font-bold mb-2">Финансы и право</h3>
               <p className="text-neutral-400">Бухгалтерия, финансовый анализ, юристы, аудит</p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
